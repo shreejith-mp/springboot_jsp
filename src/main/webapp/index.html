@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Hello World Example with JSP</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<style>
+	.add-to-btn{
+		    	font-size: larger;
+				background: aliceblue;
+		    }
+</style>
+<body>
+    <h2>Spring Boot Hello World Example with JSP</h2>
+    <button class="add-to-btn">Add to home screen</button>
+</body>
+<script type="text/javascript">
+if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('sw.js').then(function(registration) {
+	      // Registration was successful
+	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	    }, function(err) {
+	      // registration failed :(
+	      console.log('ServiceWorker registration failed: ', err);
+	    });
+	  });
+	}
+</script>
+</html>
